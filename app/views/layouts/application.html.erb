@@ -1,14 +1,575 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Surveyapp</title>
+  <title>Lytle Research Questionnaire</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery.validate.js" %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+  <script scr="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script>
+    $(document).ready(function(){
+      $("#user_form").validate({
+         rules: {
+           "user[gender]":{
+             required: true
+           },
+           "user[age]":{
+             required: true
+           },
+           "user[region]":{
+             required: true
+           },
+           "user[occupation]":{
+             required: true
+           },
+           "user[population]":{
+             required: true
+           }
+      }})
+    });
+
+    $(document).ready(function(){
+      $("#survey_form").validate({
+         rules: {
+           "survey[answers][1][choice]":{
+             required: true
+           },
+           "survey[answers][2][choice]":{
+             required: true
+           },
+           "survey[answers][3][choice]":{
+             required: true
+           },
+           "survey[answers][4][choice]":{
+             required: true
+           },
+           "survey[answers][5][choice]":{
+             required: true
+           },
+           "survey[answers][6][choice]":{
+             required: true
+           },
+           "survey[answers][7][choice]":{
+             required: true
+           },
+           "survey[answers][8][choice]":{
+             required: true
+           },
+           "survey[answers][9][choice]":{
+             required: true
+           },
+           "survey[answers][10][choice]":{
+             required: true
+           },
+           "survey[answers][11][choice]":{
+             required: true
+           },
+           "survey[answers][12][choice]":{
+             required: true
+           },
+           "survey[answers][13][choice]":{
+             required: true
+           },
+           "survey[answers][14][choice]":{
+             required: true
+           },
+           "survey[answers][15][choice]":{
+             required: true
+           },
+           "survey[answers][16][choice]":{
+             required: true
+           },
+           "survey[answers][17][choice]":{
+             required: true
+           },
+           "survey[answers][18][choice]":{
+             required: true
+           },
+           "survey[answers][19][choice]":{
+             required: true
+           },
+           "survey[answers][20][choice]":{
+             required: true
+           },
+           "survey[answers][21][choice]":{
+             required: true
+           },
+           "survey[answers][22][choice]":{
+             required: true
+           },
+           "survey[answers][23][choice]":{
+             required: true
+           },
+           "survey[answers][24][choice]":{
+             required: true
+           },
+           "survey[answers][25][choice]":{
+             required: true
+           },
+           "survey[answers][26][choice]":{
+             required: true
+           },
+           "survey[answers][27][choice]":{
+             required: true
+           },
+           "survey[answers][28][choice]":{
+             required: true
+           },
+           "survey[answers][29][choice]":{
+             required: true
+           },
+           "survey[answers][30][choice]":{
+             required: true
+           },
+           "survey[answers][31][choice]":{
+             required: true
+           },
+           "survey[answers][32][choice]":{
+             required: true
+           },
+           "survey[answers][33][choice]":{
+             required: true
+           },
+           "survey[answers][34][choice]":{
+             required: true
+           },
+           "survey[answers][35][choice]":{
+             required: true
+           },
+           "survey[answers][36][choice]":{
+             required: true
+           },
+           "survey[answers][37][choice]":{
+             required: true
+           },
+           "survey[answers][38][choice]":{
+             required: true
+           },
+           "survey[answers][39][choice]":{
+             required: true
+           },
+           "survey[answers][40][choice]":{
+             required: true
+           },
+           "survey[answers][41][choice]":{
+             required: true
+           },
+           "survey[answers][42][choice]":{
+             required: true
+           },
+           "survey[answers][43][choice]":{
+             required: true
+           },
+           "survey[answers][44][choice]":{
+             required: true
+           },
+           "survey[answers][45][choice]":{
+             required: true
+           },
+           "survey[answers][46][choice]":{
+             required: true
+           },
+           "survey[answers][47][choice]":{
+             required: true
+           },
+           "survey[answers][48][choice]":{
+             required: true
+           },
+           "survey[answers][49][choice]":{
+             required: true
+           },
+           "survey[answers][50][choice]":{
+             required: true
+           },
+           "survey[answers][51][choice]":{
+             required: true
+           },
+           "survey[answers][52][choice]":{
+             required: true
+           },
+           "survey[answers][53][choice]":{
+             required: true
+           },
+           "survey[answers][54][choice]":{
+             required: true
+           },
+           "survey[answers][55][choice]":{
+             required: true
+           },
+           "survey[answers][56][choice]":{
+             required: true
+           },
+           "survey[answers][57][choice]":{
+             required: true
+           },
+           "survey[answers][58][choice]":{
+             required: true
+           },
+           "survey[answers][59][choice]":{
+             required: true
+           },
+           "survey[answers][60][choice]":{
+             required: true
+           },
+           "survey[answers][61][choice]":{
+             required: true
+           },
+           "survey[answers][62][choice]":{
+             required: true
+           },
+           "survey[answers][63][choice]":{
+             required: true
+           },
+           "survey[answers][64][choice]":{
+             required: true
+           },
+           "survey[answers][65][choice]":{
+             required: true
+           },
+           "survey[answers][66][choice]":{
+             required: true
+           },
+           "survey[answers][67][choice]":{
+             required: true
+           },
+           "survey[answers][68][choice]":{
+             required: true
+           },
+           "survey[answers][69][choice]":{
+             required: true
+           },
+           "survey[answers][70][choice]":{
+             required: true
+           },
+           "survey[answers][71][choice]":{
+             required: true
+           },
+           "survey[answers][72][choice]":{
+             required: true
+           },
+           "survey[answers][73][choice]":{
+             required: true
+           },
+           "survey[answers][74][choice]":{
+             required: true
+           },
+           "survey[answers][75][choice]":{
+             required: true
+           },
+           "survey[answers][76][choice]":{
+             required: true
+           },
+           "survey[answers][77][choice]":{
+             required: true
+           },
+           "survey[answers][78][choice]":{
+             required: true
+           },
+           "survey[answers][79][choice]":{
+             required: true
+           },
+           "survey[answers][80][choice]":{
+             required: true
+           },
+           "survey[answers][81][choice]":{
+             required: true
+           },
+           "survey[answers][82][choice]":{
+             required: true
+           },
+           "survey[answers][83][choice]":{
+             required: true
+           },
+           "survey[answers][84][choice]":{
+             required: true
+           },
+           "survey[answers][85][choice]":{
+             required: true
+           },
+           "survey[answers][86][choice]":{
+             required: true
+           },
+           "survey[answers][87][choice]":{
+             required: true
+           },
+           "survey[answers][88][choice]":{
+             required: true
+           },
+           "survey[answers][89][choice]":{
+             required: true
+           },
+           "survey[answers][90][choice]":{
+             required: true
+           },
+           "survey[answers][91][choice]":{
+             required: true
+           },
+           "survey[answers][92][choice]":{
+             required: true
+           },
+           "survey[answers][93][choice]":{
+             required: true
+           },
+           "survey[answers][94][choice]":{
+             required: true
+           },
+           "survey[answers][95][choice]":{
+             required: true
+           },
+           "survey[answers][96][choice]":{
+             required: true
+           },
+           "survey[answers][97][choice]":{
+             required: true
+           },
+           "survey[answers][98][choice]":{
+             required: true
+           },
+           "survey[answers][99][choice]":{
+             required: true
+           },
+           "survey[answers][100][choice]":{
+             required: true
+           },
+           "survey[answers][101][choice]":{
+             required: true
+           },
+           "survey[answers][102][choice]":{
+             required: true
+           },
+           "survey[answers][103][choice]":{
+             required: true
+           },
+           "survey[answers][104][choice]":{
+             required: true
+           },
+           "survey[answers][105][choice]":{
+             required: true
+           },
+           "survey[answers][106][choice]":{
+             required: true
+           },
+           "survey[answers][107][choice]":{
+             required: true
+           },
+           "survey[answers][108][choice]":{
+             required: true
+           },
+           "survey[answers][109][choice]":{
+             required: true
+           },
+           "survey[answers][110][choice]":{
+             required: true
+           },
+           "survey[answers][111][choice]":{
+             required: true
+           },
+           "survey[answers][112][choice]":{
+             required: true
+           },
+           "survey[answers][113][choice]":{
+             required: true
+           },
+           "survey[answers][114][choice]":{
+             required: true
+           },
+           "survey[answers][115][choice]":{
+             required: true
+           },
+           "survey[answers][116][choice]":{
+             required: true
+           },
+           "survey[answers][117][choice]":{
+             required: true
+           },
+           "survey[answers][118][choice]":{
+             required: true
+           },
+           "survey[answers][119][choice]":{
+             required: true
+           },
+           "survey[answers][120][choice]":{
+             required: true
+           },
+           "survey[answers][121][choice]":{
+             required: true
+           },
+           "survey[answers][122][choice]":{
+             required: true
+           },
+           "survey[answers][123][choice]":{
+             required: true
+           },
+           "survey[answers][124][choice]":{
+             required: true
+           },
+           "survey[answers][125][choice]":{
+             required: true
+           },
+           "survey[answers][126][choice]":{
+             required: true
+           },
+           "survey[answers][127][choice]":{
+             required: true
+           },
+           "survey[answers][128][choice]":{
+             required: true
+           },
+           "survey[answers][129][choice]":{
+             required: true
+           },
+           "survey[answers][130][choice]":{
+             required: true
+           },
+           "survey[answers][131][choice]":{
+             required: true
+           },
+           "survey[answers][132][choice]":{
+             required: true
+           },
+           "survey[answers][133][choice]":{
+             required: true
+           },
+           "survey[answers][134][choice]":{
+             required: true
+           },
+           "survey[answers][135][choice]":{
+             required: true
+           },
+           "survey[answers][136][choice]":{
+             required: true
+           },
+           "survey[answers][137][choice]":{
+             required: true
+           },
+           "survey[answers][138][choice]":{
+             required: true
+           },
+           "survey[answers][139][choice]":{
+             required: true
+           },
+           "survey[answers][140][choice]":{
+             required: true
+           },
+           "survey[answers][141][choice]":{
+             required: true
+           },
+           "survey[answers][142][choice]":{
+             required: true
+           },
+           "survey[answers][143][choice]":{
+             required: true
+           },
+           "survey[answers][144][choice]":{
+             required: true
+           },
+           "survey[answers][145][choice]":{
+             required: true
+           },
+           "survey[answers][146][choice]":{
+             required: true
+           },
+           "survey[answers][147][choice]":{
+             required: true
+           },
+           "survey[answers][148][choice]":{
+             required: true
+           },
+           "survey[answers][149][choice]":{
+             required: true
+           },
+           "survey[answers][150][choice]":{
+             required: true
+           },
+           "survey[answers][151][choice]":{
+             required: true
+           },
+           "survey[answers][152][choice]":{
+             required: true
+           },
+           "survey[answers][153][choice]":{
+             required: true
+           },
+           "survey[answers][154][choice]":{
+             required: true
+           },
+           "survey[answers][155][choice]":{
+             required: true
+           },
+           "survey[answers][156][choice]":{
+             required: true
+           },
+           "survey[answers][157][choice]":{
+             required: true
+           },
+           "survey[answers][158][choice]":{
+             required: true
+           },
+           "survey[answers][159][choice]":{
+             required: true
+           },
+           "survey[answers][160][choice]":{
+             required: true
+           },
+           "survey[answers][161][choice]":{
+             required: true
+           },
+           "survey[answers][162][choice]":{
+             required: true
+           },
+           "survey[answers][163][choice]":{
+             required: true
+           },
+           "survey[answers][164][choice]":{
+             required: true
+           },
+           "survey[answers][165][choice]":{
+             required: true
+           },
+           "survey[answers][166][choice]":{
+             required: true
+           },
+           "survey[answers][167][choice]":{
+             required: true
+           },
+           "survey[answers][168][choice]":{
+             required: true
+           },
+           "survey[answers][169][choice]":{
+             required: true
+           }
+         }
+      })
+    });
+  </script>
 </head>
 <body>
-
-<%= yield %>
-
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <%= link_to "PhD Survey", '#', id: "logo" %>
+        <nav>
+          <ul class="nav pull-right">
+            <li><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Log in",   login_path %></li>
+            <li><%= locale_selector %></li>
+            <% if signed_in? %>
+              <li><%= link_to "Create Reports", '#' %></li>
+              <li><%= link_to "Log out",   'logout_path' %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container"> 
+    <header>
+      <%= render 'layouts/messages' %>
+    </header>
+    <%= yield %>
+  </div> 
 </body>
 </html>

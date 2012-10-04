@@ -1,0 +1,41 @@
+  def new
+    @questions = Questionnaire.order('id asc')
+    @user = User.find_by_id(1)
+    session[:answers_params] ||= {}
+    #raise session[:answers_params].values.inspect
+    @answer = @user.answers.new(session[:answers_params].values)
+    @answer.current_step = session[:answer_step]
+    #@answer = @user.answers.build
+  end
+
+  def create
+    @user = User.find_by_id(1)
+    #raise params[:answer].values.first.inspect
+    #raise params.inspect
+    session[:answers_params].deep_merge!(params[:answer]) if params[:answer]
+    #raise session[:answers_params].inspect
+    @responses = @user.answers.build(session[:answers_params].values)
+    @answer =  Answer.new(params[:answer].values.first)
+    @answer[:user_id] = params[:user_id]
+    #raise @answers.inspect
+    @answer.current_step = session[:answer_step]
+    if @answer.last_step?
+      @responses.each do |answer|
+    raise answer.inspect
+        answer.save
+      end
+    else
+    raise @answer.inspect
+      @answer.next_step
+    end
+    session[:answer_step] = @answer.current_step
+
+    if @answer.new_record?
+      render 'new'
+    else
+      session[:answer_step] = session[:answers_params] = nil
+      flash[:notice] = "Thanks for taking the time to take the survey."
+      redirect_to root_path
+    end
+  end
+end

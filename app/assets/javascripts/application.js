@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery.validate.js
+//$(document).ready(function(){
+//  alert("document ready");
+//});

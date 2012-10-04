@@ -1,0 +1,90 @@
+@import "bootstrap";
+
+/*  universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 40px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.justfy {
+  float: right;
+}
+
+.user {
+  margin-left: 8px;
+}
+
+/* typography */
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  /* color: #999; */
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  /* text-transform: uppercase; */
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lwidth {
+  float: left;
+  width: 200px;
+  margin-right: 0px;
+}
+
+.survtable {
+  margin-bottom: 20px;
+}
+
+.radhead {
+  width: 40px;
+}

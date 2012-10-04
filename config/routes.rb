@@ -1,4 +1,30 @@
 Surveyapp::Application.routes.draw do
+
+  scope '(:locale)' do
+    resources :questionnaires
+    resources :users 
+    resources :surveys 
+    resources :answers
+    get "consents/home"
+    get "consents/accept"
+    get "consents/thanks"
+    get "users/create"
+  end
+
+#  get "captcha_pages/new"
+  resources :captcha_pages
+  root :to => 'captcha_pages#new'
+#  root :to => 'consents#home'
+
+  resources :moderators
+  get "moderators/new"
+
+  resource :session
+
+  
+  match '/login' => "sessions#new", :as => "login"
+  match '/logout' => "sessions#destroy", :as => "logout"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

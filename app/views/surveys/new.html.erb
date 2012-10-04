@@ -1,0 +1,40 @@
+
+  <div class="row">
+    <div class="span9 offset2">
+      <%= form_for :survey, :url => surveys_path, :html=> { :id=>'survey_form'} do |f| %>
+      <%#= form_for (@survey), :url => surveys_path do |f| %>
+        <%= f.error_messages %>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan = "3" class="radhead"><%= t('surveys.strongly_agree') %></th>
+              <th colspan="3" class="radhead"><%= t('surveys.strongly_disagree') %></th>
+              <th></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th class="radhead">1</th>
+              <th class="radhead">2</th>
+              <th class="radhead">3</th>
+              <th class="radhead">4</th>
+              <th class="radhead">5</th>
+              <th class="radhead">6</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <%= f.hidden_field :name, :value => @survey.name %>
+          <tbody>
+              <%= f.fields_for :answers do |builder|  %>
+                <%= render "#{@survey.current_step}", :ans => builder %>
+              <% end %>
+          </tbody>
+        </table>
+
+        <div class="center"><%= f.submit t('general.continue_btn'), class: "btn btn-large btn-primary" %></div>
+      <% end %>
+    </div>
+  </div>

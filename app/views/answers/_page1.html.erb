@@ -1,0 +1,23 @@
+   <% indx = @answer.steps.index(@answer.current_step)+1 %>
+   <% number = 1 + (indx - 1) * 7 %>
+   <% 7.times do %>
+    <tr>
+      <td><%= f.label :"que#{number}", question(number - 1) + ':' %></td> 
+      <td><%= f.radio_button :choice, '1', :index => number %></td>
+
+      <td><%= f.radio_button :choice, '2', :index => number %></td>
+
+      <td><%= f.radio_button :choice, '3', :index => number %></td>
+
+      <td><%= f.radio_button :choice, '4', :index => number %></td>
+
+      <td><%= f.radio_button :choice, '5', :index => number %></td>
+
+      <td><%= f.radio_button :choice, '6', :index => number %></td>
+
+      <td><%= f.hidden_field :questionnaire_id, :value => number, :index => number %></td>
+   </tr>
+
+    <% number += 1 %>
+    <% end %>
+    

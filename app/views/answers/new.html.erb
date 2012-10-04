@@ -1,0 +1,20 @@
+
+  <div class="row">
+    <div class="span9 offset2">
+      <%= form_for @answer do |f| %>
+        <table class="table table-striped">
+          <tbody>
+            <% number = 0 %>
+              <%= render "#{@answer.current_step}", :f => f %>
+            <%# end %>
+
+          </tbody>
+        </table>
+
+        <p><%= f.submit 'Continue' %></p>
+
+      <%= debug(params[:answer]) %>
+
+      <% end %>
+    </div>
+  </div>

@@ -1,0 +1,75 @@
+<h1>Información personal</h1>
+
+<div class="row">
+  <div class="span9 offset2">
+<%= form_for(@user) do |f| %>
+  <table class="table table-striped">
+    <tbody>
+    <tr>
+      <td><%= f.label :gender, t(your_gender) %> </td>
+      <td><span class="justfy"><%= f.label :male %></span></td>
+      <td><%= f.radio_button :gender, t(male) %></td>
+      <td><span class="justfy"><%= f.label :female %></span>
+      <td><%= f.radio_button :gender, t(female) %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  <tr>
+    <td><%= f.label :age, 'Your age category:' %></td> 
+    <td><span class="justfy"><%= f.label '18 - 35'.to_sym %></span></td>
+    <td><%= f.radio_button :age, '18-35' %></td>
+    <td><span class="justfy"><%= f.label '36 - 70'.to_sym %></span></td>
+    <td><%= f.radio_button :age, '36-70' %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :age, 'Where you live:' %></td> 
+    <td><span class="justfy"><%= f.label 'North America'.to_sym, 'North America' %></span></td>
+    <td><%= f.radio_button :region, 'North America' %></td>
+    <td><span class="justfy"><%= f.label 'South America'.to_sym, 'South America' %></span></td>
+    <td><%= f.radio_button :region, 'South America' %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :occupation, 'What type of work you do:' %></td>
+    <td><span class="justfy"><%= f.label 'resource company'.to_sym %></span></td>
+    <td><%= f.radio_button :occupation, 'resource company' %></td>
+    <td><span class="justfy"><%= f.label :government %></span></td>
+    <td><%= f.radio_button :occupation, 'government' %></td>
+    <td><span class="justfy"><%= f.label :ngo, 'NGO' %></span></td>
+    <td><%= f.radio_button :occupation, 'NGO' %></td>
+    <td><span class="justfy"><%= f.label :other %></span></td>
+    <td><%= f.radio_button :occupation, 'Other' %></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :population, 'Size of community (population):' %></td> 
+    <td><span class="justfy"><%= f.label '<20,000'.to_sym %></span></td>
+    <td><%= f.radio_button :population, '<20000' %></td>
+    <td><span class="justfy"><%= f.label '20000_to_500000'.to_sym, '20,000 - 500,000' %></span></td>
+    <td><%= f.radio_button :population, '20000 to 500000' %></td>
+    <td><span><%= f.label :over_500000, 'Over 500,000' %></span></td>
+    <td><%= f.radio_button :population, 'Over 500000' %></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+    <div class=center hero-unit>
+      <%= f.submit 'Continue' %> 
+    </div>
+
+  </div>
+</div>
+<% end %>

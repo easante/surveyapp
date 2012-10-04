@@ -2,4 +2,203 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+  users:
+    thanks: Thanks for taking the survey
+    personal_details_saved: Personal details have been saved
+    please_fill_out: Please fill out the personal details
+  sessions:
+    login_success: Logged in successfully
+    login_failure: Invalid login/password combination
+    logout_success: You successfully logged out
+  surveys:
+    strongly_agree: Strongly agree
+    strongly_disagree: Strongly disagree
+  consents:
+    your_gender: Your gender
+    male: male
+    female: female
+    personal_information: Personal Information
+    age_category: Age category
+    where_you_live: Where you live
+    north_america: North America
+    south_america: South America
+    type_of_work: What type of work do you do?
+    resource_company: Resource company
+    government: Government
+    ngo: NGO
+    other: Other
+    population: Size of community (population)
+  general:
+    continue_btn: Continue
+  questions:
+    question_1: There is a God or gods which influence the world
+    question_2: If we don’t move to green technologies we will destroy the world
+    question_3: Humans can make a perfect world
+    question_4: We would be better off if there were no new technologies
+    question_5: People who suffer natural disasters probably had it coming
+    question_6: It is better if economies don’t keep growing
+    question_7: History tells us where we have been to guide where we are going
+    question_8: It is not wrong to take your own life
+    question_9: My family is anyone with the same last name
+    question_10: All human life has value
+    question_11: Life is a struggle to discover my purpose
+    question_12: There are some things we can never know
+    question_13: Heaven is a real place
+    question_14: The role of a corporation is to maximize shareholder value
+    question_15: Animals are as intelligent as humans
+    question_16: Large organizations are always corrupt
+    question_17: There is a God but He only helps those who help themselves
+    question_18: Poverty results from poor decisions
+    question_19: Small scale mining is better than large scale mining
+    question_20: Kids who are bullied should suck it up or fight back
+    question_21: We have to act to save the earth
+    question_22: Laws should reflect the culture
+    question_23: Things like ‘do not steal’ are always true
+    question_24: If I had to choose a human or a whale I would choose the whale
+    question_25: Evil exists and some people are evil
+    question_26: If we can’t touch, smell, taste, see or hear it, it doesn’t exist
+    question_27: Complex things are mostly reliable
+    question_28: War is always wrong
+    question_29: God loves me and cares about me
+    question_30: Human intelligence has not changed over millions of years
+    question_31: The gods will answer if you ask them properly
+    question_32: The world is evolved by internal influences
+    question_33: There is no way of knowing whether anything exists
+    question_34: I don’t believe horoscopes but read them because you never know
+    question_35: Humans are really just a plague
+    question_36: Knowing history is interesting but not important
+    question_37: People should obey laws even if they think the laws are harmful
+    question_38: We are responsible to protect the environment
+    question_39: Life is about the survival of the fittest
+    question_40: I need my cell phone
+    question_41: Governments are necessary to build good societies
+    question_42: The world would be perfect if humans were not in it
+    question_43: People who get aid should have to work for it
+    question_44: Animals build more sustainable worlds than humans
+    question_45: Everyone is responsible for their own retirement/health care
+    question_46: Life on earth is a taste of life to come
+    question_47: Taxes should be used to reduce income disparity
+    question_48: Life just happens and I want to enjoy what I can
+    question_49: The government is responsible for my retirement/health care
+    question_50: Humans are apes without hair
+    question_51: Some human life has limited or no value
+    question_52: The world is evolving as it should
+    question_53: Economies are built on technological advance
+    question_54: People who don’t know history are doomed to repeat it
+    question_55: Our lives are better because of technological advances
+    question_56: Science and technology have given us control over the world
+    question_57: The problem is not shortage but distribution of resources
+    question_58: There may be a God or gods but they have no influence over me
+    question_59: Humans can destroy the earth
+    question_60: The world is a scary and uncontrollable place
+    question_61: Aboriginal cultures are better than Western cultures
+    question_62: Resource development destroys the environment
+    question_63: I want to make the world a better place
+    question_64: History is boring and irrelevant
+    question_65: Technology is a curse
+    question_66: I like finding out more information about my family
+    question_67: The world was created by external forces
+    question_68: I will do anything to protect my family
+    question_69: I prefer to work than to retire
+    question_70: I was born to love and be loved; and then I die
+    question_71: Everyone should pay taxes
+    question_72: When I die my body will rot and I will cease to be
+    question_73: The more we try to save the earth the more damage we do
+    question_74: Humans always mess things up
+    question_75: Everyone is corrupt if they get the chance
+    question_76: There is something wrong with the world
+    question_77: Wealthy people should pay higher taxes than poor people
+    question_78: I was born for a purpose
+    question_79: The government should help poor people
+    question_80: We can live without resource development
+    question_81: Corporations care about profits and not people
+    question_82: History is a circular story that keeps repeating itself
+    question_83: There is no natural law
+    question_84: Whether stealing is wrong depends upon the situation
+    question_85: I don’t trust authority
+    question_86: I was born to make money and live well
+    question_87: Governments should have defined and restricted roles
+    question_88: Poverty makes people do bad things
+    question_89: There is more to the world than what our senses take in
+    question_90: Increasing complexity leads to a tipping point into chaos
+    question_91: Inti Raymi is real
+    question_92: In the future there will be nothing humans won’t know
+    question_93: Capital punishment is wrong
+    question_94: It is ok to sacrifice animals to improve the chances of finding gold
+    question_95: My family should help me in my retirement
+    question_96: We can prove that we exist
+    question_97: I am on my own in this world and it is up to me
+    question_98: Sometimes war is necessary to stop madmen
+    question_99: All people are basically good
+    question_100: Human life is more important than anything else
+    question_101: All cultures are morally equivalent
+    question_102: Justice is for the rich
+    question_103: There is no moral truth
+    question_104: Mountain gods control access to gold and silver
+    question_105: The earth will heal itself no matter what we do
+    question_106: Bullies should be punished
+    question_107: My family consists of my children and spouse
+    question_108: Members of NGO’s should be on corporate boards
+    question_109: The world can never be made perfect
+    question_110: Large corporations are always corrupt
+    question_111: There is no purpose to my or anyone’s life
+    question_112: Third World nations should require corporations to deliver justice
+    question_113: There is nothing seriously wrong with humanity
+    question_114: There should be fewer laws which don’t change
+    question_115: I believe in Heaven and Hell
+    question_116: I would pay higher taxes to reduce homelessness
+    question_117: There is no such place as Heaven or Hell
+    question_118: I can’t wait to retire
+    question_119: The people I live with are my family
+    question_120: We will continue to evolve and get more intelligent
+    question_121: History has a beginning and an end
+    question_122: A simple life is better than a materialistic life
+    question_123: History is a construct and real history can’t be known
+    question_124: Life begins at conception
+    question_125: Burning trees helps the rains come
+    question_126: The worlds resources are disappearing
+    question_127: Resource development is necessary to our way of life
+    question_128: Only people and not organizations can be corrupt
+    question_129: There is no such thing as God or gods
+    question_130: There is no shortage of oil in the world
+    question_131: What works in one culture may not work in another
+    question_132: Science and reason are more important than faith and superstition
+    question_133: We can’t prove that we exist
+    question_134: Complex things are mostly unreliable
+    question_135: Strong economies are built on moral foundations
+    question_136: If a policeman told me to kill or be killed, I would kill
+    question_137: Only people who pay taxes should vote
+    question_138: The courts will protect poor people
+    question_139: The environment is more important than humans
+    question_140: The more we know, the more we know what we don’t know
+    question_141: New technologies will always help us keep costs down
+    question_142: Humans are the most important thing
+    question_143: Competition is the basis of a strong economy
+    question_144: There is a God or gods which influence the world
+    question_145: If we don’t move to green technologies we will destroy the world
+    question_146: Humans can make a perfect world
+    question_147: We would be better off if there were no new technologies
+    question_148: People who suffer natural disasters probably had it coming
+    question_149: It is better if economies don’t keep growing
+    question_150: History tells us where we have been to guide where we are going
+    question_151: It is not wrong to take your own life
+    question_152: My family is anyone with the same last name
+    question_153: All human life has value
+    question_154: Life is a struggle to discover my purpose
+    question_155: There are some things we can never know
+    question_156: Heaven is a real place
+    question_157: The role of a corporation is to maximize shareholder value
+    question_158: Animals are as intelligent as humans
+    question_159: Large organizations are always corrupt
+    question_160: There is a God but He only helps those who help themselves
+    question_161: Poverty results from poor decisions
+    question_162: Small scale mining is better than large scale mining
+    question_163: Kids who are bullied should suck it up or fight back
+    question_164: We have to act to save the earth
+    question_165: Laws should reflect the culture
+    question_166: Things like ‘do not steal’ are always true
+    question_167: If I had to choose a human life or a whale’s live I would choose the whale
+    question_168: Evil exists and some people are evil
+    question_169: If we can’t touch, smell, taste, see or hear it, it doesn’t exist
