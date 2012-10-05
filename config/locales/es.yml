@@ -5,13 +5,13 @@ es:
   layouts:
     application:
   users:
-    thanks: Thanks for taking the survey
+    thanks: Gracias por participar en la encuesta
     personal_details_saved: Detalles personales se han sido almacenado
     please_fill_out: Sirvese llenar los detalles personales
   sessions:
-    login_success: Logged in successfully
-    login_failure: Invalid login/password combination
-    logout_success: You successfully logged out
+    login_success: Entró con éxito
+    login_failure: Login y / o clave inválido
+    logout_success: Salió con éxito
   surveys:
     strongly_agree: Muy de acuerdo
     strongly_disagree: Muy en desacuerdo
