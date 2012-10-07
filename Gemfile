@@ -4,7 +4,9 @@ gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 
-gem 'recaptcha',:require => 'recaptcha/rails'
+#gem 'recaptcha',:require => 'recaptcha/rails'
+gem 'galetahub-simple_captcha', :require => 'simple_captcha'
+gem 'rmagick', :require => false
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

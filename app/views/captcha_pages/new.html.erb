@@ -1,5 +1,6 @@
-<p>Type the two words below to continue:</p>
+<p>Type the word below to continue:</p>
 <%= form_tag captcha_pages_path do %>
-  <%= recaptcha_tags %><br/>
+  <%= show_simple_captcha :label => "" %>
+  <%#= recaptcha_tags %><br/>
   <%= submit_tag 'submit', class: "btn btn-large btn-primary" %>
 <% end %>

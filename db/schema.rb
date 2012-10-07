@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120921154305) do
+ActiveRecord::Schema.define(:version => 20121007060119) do
 
   create_table "answers", :force => true do |t|
     t.integer  "questionnaire_id"
@@ -45,6 +45,15 @@ ActiveRecord::Schema.define(:version => 20120921154305) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "simple_captcha_data", :force => true do |t|
+    t.string   "key",        :limit => 40
+    t.string   "value",      :limit => 6
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
+
+  add_index "simple_captcha_data", ["key"], :name => "idx_key"
 
   create_table "surveys", :force => true do |t|
     t.datetime "created_at", :null => false
