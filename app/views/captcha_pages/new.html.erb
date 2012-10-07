@@ -1,5 +1,5 @@
 <br/>
-<%= "Type the word below to proceed" %>
+<p><%= "Type the word below to proceed" %></p>
 <%= form_tag captcha_pages_path do %>
   <%= show_simple_captcha :label => "Type the word in the textbox above" %><br/>
   <%= submit_tag 'submit', class: "btn btn-large btn-primary" %>
