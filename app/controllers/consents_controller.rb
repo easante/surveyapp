@@ -10,7 +10,7 @@ class ConsentsController < ApplicationController
   end
 
   def verify_human
-    redirect_to new_captcha_page_path unless session[:captcha]
+#    redirect_to new_captcha_page_path unless session[:captcha]
   end
 
 end
