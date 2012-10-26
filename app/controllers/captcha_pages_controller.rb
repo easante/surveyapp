@@ -1,6 +1,5 @@
 class CaptchaPagesController < ApplicationController
   def new
-    
   end
 
   def create

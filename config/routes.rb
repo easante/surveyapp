@@ -12,9 +12,9 @@ Surveyapp::Application.routes.draw do
   end
 
 #  get "captcha_pages/new"
-  resources :captcha_pages
-  root :to => 'captcha_pages#new'
-#  root :to => 'consents#home'
+#  resources :captcha_pages
+#  root :to => 'captcha_pages#new'
+  root :to => 'consents#home'
 
   resources :moderators
   get "moderators/new"
