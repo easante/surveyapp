@@ -27,10 +27,10 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'dynamic_form'
 end
 
 gem 'jquery-rails'
+gem 'dynamic_form'
 
 group :production do
   gem 'pg', '0.12.2'
