@@ -2,7 +2,11 @@ class ConsentsController < ApplicationController
   before_filter :verify_human
 
   def home
-    #end
+    if params[:locale] == "en"
+      render "consents/home"
+    else
+      render "consents/home_es"
+    end
   end
 
   def accept

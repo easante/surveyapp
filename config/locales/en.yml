@@ -29,6 +29,7 @@ en:
     government: Government
     ngo: NGO
     other: Other
+    i_accept: I Accept
     population: Size of community (population)
   general:
     continue_btn: Continue

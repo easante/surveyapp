@@ -30,6 +30,7 @@ es:
     government: Gobierno
     ngo: ONG
     other: Otros
+    i_accept: Acepto
     population: Tamaño de la comunidad (población)
   general:
     continue_btn: Siga
