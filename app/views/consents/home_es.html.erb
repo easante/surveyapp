@@ -76,5 +76,10 @@ Junio 2012
 </p>
 
 <div class=center hero-unit>
-  <a href="accept", class="btn btn-large btn-primary"><%= t('consents.i_accept') %></a>
+  <% if params[:locale] == nil %>
+    <a href="consents/accept", class="btn btn-large btn-primary"><%= t('consents.i_accept') %></a><br/>
+  <% else %>
+    <a href="accept", class="btn btn-large btn-primary"><%= t('consents.i_accept') %></a><br/>
+  <% end %>
 </div>
+
